@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cafe</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f1ea;
+        }
+
+        header {
+            background-color: #4b2e2e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card h2 {
+            color: #6b3e26;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .card button {
+            background-color: #6b3e26;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background-color: #4b2e2e;
+        }
+
+        /* 🎥 Video Section */
+        .video-section {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .video-section video {
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        footer {
+            background-color: #4b2e2e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>☕ My Cafe</h1>
+    <p>Fresh Coffee | Tasty Snacks</p>
+</header>
+
+<!-- Cards -->
+<div class="container">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500">
+        <h2>Espresso</h2>
+        <p>Strong and bold coffee to kickstart your day.</p>
+        <button>Order Now</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1521305916504-4a1121188589?w=500">
+        <h2>Latte</h2>
+        <p>Smooth blend of coffee and milk.</p>
+        <button>Order Now</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=500">
+        <h2>Snacks</h2>
+        <p>Fresh and tasty snacks to enjoy with coffee.</p>
+        <button>Order Now</button>
+    </div>
+
+</div>
+
+<!-- 🎥 Video Section -->
+<div class="video-section">
+    <h2>Watch Our Cafe Story</h2>
+
+    <!-- Option 1: Local video -->
+    <video controls>
+        <source src="your-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+
+</div>
+
+<footer>
+    <p>© 2026 My Cafe | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

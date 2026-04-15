@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightblue;
+            font-family: cursive;
+            display: flex;
+            /* Side by side : row format */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .product{
+            background-color: rgb(249, 247, 249);
+            border: 1px solid brown;
+            width: 300px;
+            height: 450px;
+            margin: 30px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 6px 6px 12px rgb(6, 6, 6);
+        }
+        .product img{
+            object-fit: cover;
+            width : 100%;
+            height: 300px;
+        }
+        .product button{
+            background-color: orange;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: darkorange;
+            transform: scale(1.02);
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+    <!-- Box Model -->
+    <div class="product">
+        <img src="https://images.pexels.com/photos/4065617/pexels-photo-4065617.jpeg">
+        <h2>Laptop</h2>
+        <p>$1000</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.pexels.com/photos/28157683/pexels-photo-28157683.jpeg">
+        <h2>Shoes</h2>
+        <p>$25</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://images.pexels.com/photos/5250892/pexels-photo-5250892.jpeg">
+        <h2>Pen</h2>
+        <p>$2</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.pexels.com/photos/5712509/pexels-photo-5712509.jpeg">
+        <h2>Book</h2>
+        <p>$5</p>
+        <button>Add to Cart</button>
+    
+</body>
+</html>

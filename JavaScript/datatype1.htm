@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Data Types in JavaScript</h1>
+    <script>
+        //Data types - types of data
+        //1. String = Text - "Anything written in double or single quotes is called string "
+        var name = "Vaishnavi"
+        console.log(name)
+        //Check the data type of value-typeof(variable name)
+        console.log(typeof(name))
+
+        //2. NUMBER :+ve, -ve, decimal - Every number is a number data type
+        //write number directly
+        var age = 20
+        console.log(typeof(age))
+
+        //3. Boolean - true or false
+        var isMarried = false
+        var isStudent = true
+        console.log(isMarried)
+        console.log(typeof(isMarried))
+        console.log(typeof(isStudent))
+
+        //4. Undefined - When no value is assigned to a variable then it is called undefined
+        var a
+        console.log(typeof(a))
+
+        //5. Null - It is an empty value
+        var b = null
+        console.log(typeof(b)) // Due to an early bug in JavaScript, the data type of null is object but it should be null
+    </script>
+</body>
+</html>
