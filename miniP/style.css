@@ -1,0 +1,70 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background-color: #6c5ce7;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header p {
+    margin-top: 5px;
+}
+
+/* Cards Section */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 25%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Categories Section */
+.categories {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Transactions Section */
+.transactions {
+    margin: 20px;
+}
+
+.transaction {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.transaction span {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-weight: bold;
+}

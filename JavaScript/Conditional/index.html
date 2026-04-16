@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Conditional
+
+        //1. If(condition) : If will only gives one condition and if that condition is true then it will execute the code block
+        let age = 18;
+        if(age >= 18){
+            console.log("You are eligible to vote")
+           //alert("You are eligible to vote")//popup msg
+        }
+
+        //2. If-else : If will gives one condition and if that condition is true then it will execute the code block and if that condition is false then it will execute the else block
+        //if true and else false
+        let number = 10;
+        if(number >= 20){
+            console.log("Number is greater")
+            alert("Number is greater than 20")
+        } else {
+            console.log("Number is not greater than 20")
+            alert("Number is not greater than 20")
+        }
+
+        //else if : If will gives one condition and if that condition is true then it will execute the code block and if that condition is false then it will check for the next condition and if that condition is true then it will execute the code block and if that condition is false then it will execute the else block
+        //Delivery Charges - Amount is greater or equal to 500 - Free
+        //Delivery Charges - Amount is in between 400 and 499 - 30rs delivery charges
+        //Delivery Charges - Amount is in between 300 and 399 - 50rs delivery charges
+        //Cannot place Minimun cart value is 300
+
+        let amount = 499
+        if(amount >= 500){
+            alert("Free Delivery")
+        }
+        else if(amount >= 400 && amount < 500){
+            alert("30rs Delivery Charges")
+        }
+        else if(amount >= 300 && amount < 400){
+            alert("50rs Delivery Charges")
+        }
+        else {
+            alert("Cannot place order. Minimum cart value is 300")
+        }
+    </script>
+</body>
+</html>
