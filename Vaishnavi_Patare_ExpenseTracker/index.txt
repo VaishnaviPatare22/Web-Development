@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>My Expense Tracker</h1>
+        <p>Track your monthly spending</p>
+    </header>
+
+    <!-- Summary Cards -->
+    <div class="cards">
+        <div class="card">
+            <h3>💸 Total Spent</h3>
+            <p>₹15,000</p>
+        </div>
+
+        <div class="card">
+            <h3>🛍️ Highest Category</h3>
+            <p>Shopping</p>
+        </div>
+
+        <div class="card">
+            <h3>📅 Current Month</h3>
+            <p>April</p>
+        </div>
+    </div>
+
+    <!-- Expense Categories -->
+    <div class="categories">
+        <h2>Expense Categories</h2>
+
+        <div class="category">
+            <span>🍔 Food</span>
+            <span>₹4000</span>
+        </div>
+
+        <div class="category">
+            <span>🚗 Transport</span>
+            <span>₹2000</span>
+        </div>
+
+        <div class="category">
+            <span>🛍️ Shopping</span>
+            <span>₹6000</span>
+        </div>
+
+        <div class="category">
+            <span>🎬 Entertainment</span>
+            <span>₹3000</span>
+        </div>
+    </div>
+
+    <!-- Recent Transactions -->
+    <div class="transactions">
+        <h2>Recent Transactions</h2>
+
+        <div class="transaction">
+            <h4>Grocery Shopping</h4>
+            <p>10 April 2026</p>
+            <span>₹1500</span>
+        </div>
+
+        <div class="transaction">
+            <h4>Movie Night</h4>
+            <p>8 April 2026</p>
+            <span>₹800</span>
+        </div>
+
+        <div class="transaction">
+            <h4>Bus Pass</h4>
+            <p>5 April 2026</p>
+            <span>₹1200</span>
+        </div>
+
+    </div>
+
+</body>
+</html>
