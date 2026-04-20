@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+            //Math object - random nno. between 1  to 6
+            let luckyNo = Math.floor(Math.random() * 6) + 1;
+           // console.log(luckyNo)
+           //game logic
+           while(true){
+                guess = prompt("Enter number between 1 to 6")
+
+                if(luckyNo == guess){
+                    alert("Congratulations! You guessed the lucky number.")
+                    break; // Exit the loop if the guess is correct
+                } else {
+                    alert("Wrong guess. Try again!")    
+                    break; // Exit the loop after one attempt, remove this line if you want to allow multiple attempts                
+                }
+           }
+        </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Array - ["value1", "value2", "value3"]
+        //Index no starts from 0
+
+        var fruits = ["Apple", "Banana", "Mango", "Grapes"]
+
+        //Array methods
+        //1. length - to find the length of array
+        console.log(fruits.length)
+
+        //2. push("New value") - add the data to last of the array
+        fruits.push("Orange")
+
+        //unshift("new value") - add data at start of the array
+        fruits.unshift("Pineapple")
+
+        //remove data from array
+        //1. pop() - remove last element from array
+        fruits.pop()
+
+        //2. shift() - remove first element from array
+        fruits.shift()
+
+        //splice() - add data at specific position
+        //splice(Index No, 0-(Keep old data) or 1-(Remove old data), "new value")
+        fruits.splice(2, 0, "Strawberry")
+        console.log(fruits)
+    </script>
+</body>
+</html>
