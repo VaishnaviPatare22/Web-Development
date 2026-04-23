@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background: linear-gradient(to right, #1b37e7, #ffffff);
+
+        }
+
+        h1{
+            color: black;
+            font-size: 50px;
+            text-shadow: #000000 0px 1px 5px;
+        }
+
+        .choices{
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px;
+        }
+
+        .choices button{
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            border: none;
+            background-color: #1c7a1f;
+            color: white;
+            border-radius: 5px;
+            box-sizing: 50px;
+            font-size: 18px;
+            box-shadow: #1c7a1f 0px 1px 5px;
+        }
+
+        .rock{
+            background-color: #f44336;
+        }
+        .paper{
+            background-color: #2196F3;
+        }
+        .scissor{
+            background-color: #ff9800;
+        }
+
+        #result{
+            font-size: 24px;
+            margin: 20px;
+            font-weight: bold;
+            color: #060505;
+            text-shadow: #000000 0px 1px 5px;
+        }
+
+        .scoreboard{
+            background: #edecdc;
+            color: #000000;
+            box-shadow: #f44336 0px 1px 10px;
+            border-radius: 20px;
+        }
+
+        #scoreboard{
+            margin: 5px 0;
+            padding: 10px;
+            background-color: #20ab0e;
+            font-size: 20px;
+            text-align: left;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .scoreboard p{
+            margin: 5px 0;
+            padding: 10px;
+            font-size: 18px;
+            text-align: left;
+            background-color: bisque;
+            border-bottom: 1px solid #ddd;
+        }
+        .reset{
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Rock Paper Scissor Game</h1>
+
+
+    <div class="choices">
+        <button class="rock" onclick="playGame('rock')">ROCK</button>
+        <button class="paper" onclick="playGame('paper')">PAPER</button>  
+        <button class="scissor" onclick="playGame('scissor')">SCISSOR</button>
+
+    </div>
+
+    <p id="result">Choose an option To Play</p>
+    <div class="scoreboard">
+        <p id="scoreboard"><strong>Scoreboard</strong></p>
+        <p>Wins:  <span id="wins">0</span></p>
+        <p>Losses: <span id="losses">0</span></p>    
+        <p>Draws: <span id="draws">0</span></p>
+
+    </div>
+
+    <button class="reset" onclick="resetGame()">Reset Game</button>
+
+    <script>
+        // Game logic will go here
+        let wins = 0
+        let losses = 0
+        let draws = 0
+
+        function playGame(userChoice){
+            const choices = ['rock', 'paper', 'scissor']
+            const computerChoice = choices[Math.floor(Math.random() * 3)]
+            let resultMessage = ''
+            if(userChoice === computerChoice){
+                resultMessage = "You Pick the Same Option, It is Draw " + userChoice
+                draws++
+            }
+            else if (
+                (userChoice === 'rock' && computerChoice === 'scissor') ||
+                (userChoice === 'paper' && computerChoice === 'rock') ||
+                (userChoice === 'scissor' && computerChoice === 'paper')
+
+
+            ){
+                resultMessage = 'You Won! ' + userChoice + ' beats ' + computerChoice
+                wins++
+            }
+            else{
+                resultMessage = 'You Lost! ' + computerChoice + ' beats ' + userChoice
+                losses++
+            }
+            document.getElementById("result").innerHTML = resultMessage
+        document.getElementById("wins").innerHTML = wins
+        document.getElementById("losses").innerHTML = losses
+        document.getElementById("draws").innerHTML = draws
+        }
+
+        //Function for reset
+        function resetGame(){
+            wins = 0
+            losses = 0
+            draws = 0
+            document.getElementById("result").innerHTML = "Choose an option To Play"
+            document.getElementById("wins").innerHTML = wins
+            document.getElementById("losses").innerHTML = losses
+            document.getElementById("draws").innerHTML = draws
+        }
+        
+    </script>
+</body>
+</html>

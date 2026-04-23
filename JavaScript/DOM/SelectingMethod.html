@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="xyz">Hello</p>
+    <p id="abc">Web Development</p>
+
+    <div class="myclass">AI Developer - 0</div>
+    <div class="myclass">ML Developer - 1</div>
+
+    <p>Plain Simple paragraph tag</p>
+
+    <div class="box">Module 1</div>
+    <div class="box">Module 2</div>
+
+    <ul id="">
+        
+    </ul>
+    <script>
+        //DOM
+        //Element = html tag
+        //Document = webpage
+        //Selecting method - select means to choose HTML Tag through JS
+
+        //1.getElementById("id name") - select element by id
+        var element = document.getElementById("xyz")
+        console.log(element)
+
+        var element2 = document.getElementById("abc")
+        console.log(element2)
+
+        console.log(element.textContent)
+
+        //2. getElementsByClassName("class name") - select element by class name
+        var element3 = document.getElementsByClassName("myclass")//document to access full webpage and getElementsByClassName to select element by class name
+        console.log(element3)
+        console.log(element3[0].textContent) //to access first element of array
+
+        //3. Tag without ID and class - TagName
+        var element4 = document.getElementsByTagName("p")
+        console.log(element4)
+        console.log(element4[1].textContent) //to access second element of array
+        console.log(element4[2].textContent) //to access third element of array
+
+        //4. querySelector("css selector") - follows the rules of css selector - #IDName , .ClassName , TagName
+        //only selects first - element/tag
+        // const xyz = document.querySelector(".box") //select first element with class name box
+        // console.log(xyz)
+
+        //querySelectorAll("css selector") - follows the rules of css selector - #IDName , .ClassName , TagName
+        const pqr = document.querySelectorAll(".box") //select all element with class name box
+        console.log((pqr[0]).textContent)
+
+        const u1 = document.getElementById("data")
+        //CreateElement = l tag
+        const list = document.createElement("li")
+        list.textContent = "list Item"
+        u1.appendChild(list)
+    </script>
+</body>
+</html>
